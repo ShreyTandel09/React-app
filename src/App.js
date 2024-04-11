@@ -1,14 +1,21 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import "./styles.css";
+import styled from "styled-components";
+import AccountBox from "./views/components/index";
 
-function App() {
+const AppContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hell</h1>
-      </header>
-    </div>
+    <AppContainer>
+      <AccountBox />
+    </AppContainer>
   );
 }
-
-export default App;

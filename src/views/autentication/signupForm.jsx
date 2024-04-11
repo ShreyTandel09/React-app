@@ -7,9 +7,9 @@ import {
   LineText,
   MutedLink,
   SubmitButton,
-} from "./common";
-import { Marginer } from "../marginer";
-import { AccountContext } from "./accountContext";
+} from "../components/common";
+import { Marginer } from "./marginer";
+import { AccountContext } from "../components/accountContext";
 
 export function SignupForm(props) {
   const { switchToSignin } = useContext(AccountContext);

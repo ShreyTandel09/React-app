@@ -1,9 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App"; // Import the App component
+import ReactDOM from "react-dom";
 
-const myFirstElement = <h1>Hell!</h1>;
+import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(myFirstElement);
-root.render(<App />);
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  rootElement
+);
